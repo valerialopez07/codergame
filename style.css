@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif !important;
+  background-color: #d6e9fe !important;
+  padding-top: 5em; /*porque mi menú se pegaba con el futuro carrusel */
+}
+
+.logo {
+  width: 10%;
+}
+.menu-container {
+  background-color: rgba(255, 254, 254, 0.952);
+  padding: 20px 0;
+  display: flex;
+  position: fixed;
+  width: 100%; /*para que ocupe todo el ancho disponible*/
+  top: 0; /*porque mi menú se pegaba con el futuro carrusel*/
+  z-index: 1;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.links-1 {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  align-items: center;
+}
+.links-2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.link-login {
+  padding: 10px;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  /* margin: 20px; */
+}
+.texto-buscador {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 100px;
+  color: black;
+}
+
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+.photo-grid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.container_cards {
+  width: 100%;
+  /* max-width: 1200px; */
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+.photo-grid .photo-grid-item {
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 1);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+  background-color: #3b5360;
+}
+.photo-grid .photo-grid-item img {
+  width: 330px;
+  height: 220px;
+}
+.photo-grid .photo-grid-item p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300px;
+  color: azure;
+}
+
+.photo-grid .photo-grid-item:hover {
+  transform: translate(10px, 10px);
+}
+/*Footer*/
+.logo-footer {
+  width: 20%;
+}
+/* .footer {
+  display: flex;
+  justify-content: space-between; 
+  position: fixed;
+  bottom: 0;  
+} */
+.footer-item {
+  background-color: rgba(255, 254, 254, 0.952);
+  height: 100px;
+  flex: 1;
+}
+.footer-one {
+  flex: 1;
+}
+.footer-two {
+  flex: 2;
+}
+.icono {
+  margin: 10px;
+}
+/*Media query*/
+@media only screen and (max-width: 800px) {
+  .links-2 {
+    visibility: collapse;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .links-1 {
+    visibility: collapse;
+  }
+}
+
+/*Boton realizado con https://css3buttongenerator.com*/
+.btn {
+  background: #1e1a1f;
+  background-image: -webkit-linear-gradient(top, #1e1a1f, #215575);
+  background-image: -moz-linear-gradient(top, #1e1a1f, #215575);
+  background-image: -ms-linear-gradient(top, #1e1a1f, #215575);
+  background-image: -o-linear-gradient(top, #1e1a1f, #215575);
+  background-image: linear-gradient(to bottom, #1e1a1f, #215575);
+  -webkit-border-radius: 14;
+  -moz-border-radius: 14;
+  border-radius: 14px;
+  text-shadow: 1px 1px 3px #666666;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px 19px 12px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}

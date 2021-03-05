@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!--Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/form.css">
+
+    <!-- SEO -->
+
+    <link rel="shortcut icon" href="img/logo500.png" type="image/x-icon">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <!--Menu-->
+    <section class="menu-container">
+        <div class="menu">
+            <div class="links-1">
+                <img src="img/logo500.png" class="logo">
+                CoderGame
+                <div>
+                    <a href="index.html">Home</a>
+                </div>
+                <div>
+                    <a href="conocenos.html" target="_blank"> Conocenos</a>
+                </div>
+                <div>
+                    <a href="contacto.html" target="_blank">Contacto</a>
+                </div>
+            </div>
+            <div class="links-2">
+                <div>
+                    <label for="" class="texto-buscador">Ingrese un juego</label>
+                    <input type="text">
+                </div>
+                <div class="link-login">
+                    <a href="">Login</a>
+                </div>
+                <div>
+                    <a href="carrito.html" target="_blank"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- header -->
+        <header class="contact-form-header">
+            <h1>Contactanos!</h1>
+        </header>
+        <!-- Fin Header -->
+        <!-- Form  Action= la URL que procesa el formulario-->
+        <form action="/Server" method="POST" class="contact-form">
+            <div class="form-row">
+                <label for="full-name">Nombre</label>
+                <input type="text" id="full-name" name="nombre">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="ejemplo@mail.com">
+
+                <label for="email">Celular</label>
+                <input type="number" name="celular" id="celular">
+
+                <label for="check">Marca esto si preferís que nos contactemos por whatsapp</label>
+                <input type="checkbox" name="checkbox" id="check">
+
+
+                <label for="mensaje">Dejanos tu mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10">
+                </textarea>
+
+
+                <div class="container-btn">
+                    <button type='submit'>Enviar</button>
+                </div>
+
+            </div>
+
+        </form>
+        <!-- Fin Form -->
+    </div>
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="row">
+            <div class="col-2 footer-item">
+                <img src="img/logo500.png" alt="" class="logo-footer">
+            </div>
+            <div class="col-5 footer-item text-center">
+                <h3>Redes Sociales</h3>
+
+                <a href="https://facebook.com" target="_blank">
+                    <i class="icono fab fa-facebook"></i>
+                </a>
+                <a href="icono https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="icono fab fa-twitter"></i>
+                </a>
+
+            </div>
+            <div class="col-5 footer-item">
+                <h3>Información de Contacto</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!-- 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>-->
+
+
+</body>
+
+</html>
